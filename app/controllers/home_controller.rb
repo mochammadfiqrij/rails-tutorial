@@ -19,6 +19,14 @@ class HomeController < ApplicationController
       @title = "Buku tidak ada"
     end
 
+    def show
+
+    end
+
+    def delete
+
+    end
+
   end
 
 end
