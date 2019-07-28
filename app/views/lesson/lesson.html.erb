@@ -1,0 +1,16 @@
+<p>Ini adalah halaman <%= @judul %></p>
+
+<table border="1">
+  <tr>
+    <td>ID</td>
+    <td>Nama Mata Pelajaran</td>
+    <td>Bidang</td>
+  </tr>
+  <% @lesson.each do |lesson| %>
+    <tr>
+      <td><%= lesson.id%></td>
+      <td><%= lesson.lesson_name%></td>
+      <td><%= lesson.field%></td>
+    </tr>
+  <% end %>
+</table>

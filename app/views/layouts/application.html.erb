@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aplikasi</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= tag :meta, name: :psj, action: action_name, controller: controller_name %>
+  </head>
+  <%= content_tag :body, data: { action: action_name, controller: controller_name } do %>
+    <main role="main">
+      <body>
+
+        <%= yield %>
+      </body>
+    </main>
+
+  <% end %>
+</html>
